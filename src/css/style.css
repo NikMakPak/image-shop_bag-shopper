@@ -1,0 +1,131 @@
+/* toolbar-container - ужасно, переделать */
+
+*:not(body) {
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.17, 0.63, 0.54, 0.9);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6ebdd;
+}
+
+
+/* header */
+
+header,
+.logo-link {
+    width: 100%;
+    height: 8vh;
+    background-color: #816767;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    width: 70%;
+    background-color: #fff;
+}
+
+
+/* -header */
+
+
+/* main */
+
+main {
+    width: 100%;
+    height: 79vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bag-template {
+    background-color: #fff;
+    margin-top: 9.8vh;
+    width: 100%;
+    flex-grow: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-zone {
+    width: 195px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.working-zone,
+.paste_img-btn input {
+    width: 50%;
+    height: 50%;
+    background-color: #a8a8a8;
+}
+
+
+/* ужасно, переделать */
+
+.toolbar-container {
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
+    left: 87%;
+    top: 28%;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+}
+
+.toolbar {
+    width: 37px;
+    height: 210px;
+    background-color: #19c5e4;
+}
+
+.back-btn {}
+
+.center-btn {}
+
+.confirm-btn {}
+
+.color-swipe {
+    width: 100%;
+    height: 53px;
+    background-color: #d32020;
+}
+
+.wrap {}
+
+
+/* -main */
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 13vh;
+    background-color: #5d4e4e;
+}
+
+.price {}
+
+.order {}
+
+
+/* -footer */

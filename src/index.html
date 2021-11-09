@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopper painter</title>
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <a class="logo-link" href="#">
+                <div class="logo">Shopper painter</div>
+            </a>
+        </header>
+        <main>
+            <div class="bag-template">
+                <div class="bg-zone">
+                    <div class="working-zone">
+                        <div class="paste_img-btn">
+                            <input type="file" name="mainBagPict" onchange="imgPaste(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- предлагаю вынести в блок body и уже там центрировать в бок. крч как модальное окно. -->
+
+
+            <div class="color-swipe">
+                <div class="wrap">
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="skyblue"></div>
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="yellow"></div>
+                    <div class="orange"></div>
+                    <div class="red"></div>
+                    <div class="purple"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="price"></div>
+            <div class="order"></div>
+        </footer>
+        <script src="/src/js/script.js"></script>
+    </div>
+
+    <aside class="toolbar-container">
+        <div class="toolbar">
+            <div class="back-btn"></div>
+            <div class="center-btn"></div>
+            <div class="confirm-btn"></div>
+        </div>
+    </aside>
+</body>
+
+</html>
